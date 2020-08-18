@@ -3,5 +3,3 @@ for (let j = 1; j <= 7; j = j + 1){
 	i += "#";
 	console.log (i);
 }
-
-aaa
