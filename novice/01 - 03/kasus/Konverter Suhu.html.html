@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<title>Temperature Converter</title>
+<body>
+
+<h2>Temperature Converter</h2>
+<p>The Temperature Converter:</p>
+
+<p>
+  <label>Fahrenheit</label>
+  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Celcius: <span id="outputCelcius"></span></p>
+
+<p>
+    <label>Celcius</label>
+    <input id="inputCelcius" type="number" placeholder="Celcius" oninput="celsiusToFahrenheit(this.value)" onchange="celsiusToFahrenheit(this.value)">
+</p>
+<p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+
+<script>
+    //Fahrenheit - Celcius
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelcius").innerHTML=(valNum*9)/5-32;
+}
+
+    //Celcius - Fahrenheit
+function celsiusToFahrenheit(valNum) {
+    valNum = parseFloat(valNum);
+    document.getElementById("outputFahrenheit").innerHTML=(valNum*9/5)+32;
+}
+</script>
+
+</body>
+</html>
