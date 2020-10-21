@@ -45,7 +45,7 @@ console.log ("left" in an0bject);
 // false
 console.log ("right" in an0bject);
 // true
-console.log (0bject.keys({x : 0, y : 0, z : 2}));
+console.log (an0bject.keys({x : 0, y : 0, z : 2}));
 // ["x", "y", "z"]
 
 // 0bject.assign function
